@@ -8,6 +8,25 @@
     <title></title>
   </head>
   <body>
-    <h1>hey</h1>
+    <div class="container">
+      <h1>View a Github Users Repositories</h1>
+      <div class="row">
+        <div class="col-xs-4">
+          <form id="githubUsername">
+            <div class="form-group">
+              <label for="inputUsername">Enter a github username</label>
+              <input type="text" name="inputUsername" id="inputUsername" class="form-control">
+            </div>
+            <button type="submit" class="btn btn-primary">Go!</button>
+          </form>
+        </div>
+      </div>
+      <div class="repoList">
+        <h3 id="username">User's Github Repos</h3>
+        <ul>
+
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
