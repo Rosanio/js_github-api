@@ -5,14 +5,14 @@ exports.getRepos = function(username) {
   //MAKE REQUEST TO GITHUB
 
   $.get('https://api.github.com/users/' + username + '/repos?access_token=' + apiKey + '&per_page=1000').then(function(response) {
-
+    console.log(response);
     //LIST THROUGH EACH REPO OBJECT
 
     for(var i = 0; i < response.length; i++) {
 
       //DISPLAY NAME
 
-      $('#repoList').append('<dt>' + response[i].name + '</dt>');
+      $('#repoList').append('<dt><a href=' + response[i].html_url + '>' + response[i].name + '</a></dt>');
 
       //GRAB THE DATE AND TIME
 
