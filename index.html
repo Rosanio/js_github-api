@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <title>Git Github</title>
+    <title>Git Githubbers</title>
   </head>
   <body>
     <div class="container">
@@ -22,11 +22,19 @@
           </form>
         </div>
       </div>
-      <div class="repoList">
-        <h3 id="username">User's Github Repos</h3>
-        <dl id="repoList">
-
-        </dl>
+      <div class="row">
+        <div class="col-xs-7 userInfo">
+          <h2 id="displayUsername"></h2>
+          <div class="imageContainer">
+          </div>
+          <p id="displayEmail"></p>
+          <p id="displayFollowers"></p>
+          <button type="button" class="btn btn-info" id="viewRepos">View Repositories</button>
+        </div>
+        <div class="col-xs-5 userRepos">
+          <h3 id="username"></h3>
+          <dl id="repoList"></dl>
+        </div>
       </div>
     </div>
   </body>

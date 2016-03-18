@@ -2,10 +2,32 @@ h1 {
   text-align: center;
 }
 
+dt {
+  font-size: 18px;
+  margin-bottom: 1px;
+  margin-top: 15px;
+  font-family: serif;
+}
+
 dd {
   margin-left: 1em;
 }
 
-#username {
+.userRepos {
   display: none;
+}
+
+.userInfo {
+  display: none;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#displayFollowers {
+  font-size: 20px;
 }
